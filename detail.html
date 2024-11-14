@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>JetFlix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/detail.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section class="home">
+    <div class="headerbg">
+      <header>
+        <div class="container ">
+          <div class="navbar flex1">
+            <div class="logo">
+              <h2>JetFlix</h2>
+            </div>
+            <nav>
+              <ul id="menuitem">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="detail.html">Featured</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Account</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+            <div class="subscribe flex">
+              <i class="fas fa-search"></i>
+              <i id="palybtn" class="fas fa-user"></i>
+              <button>Subscriptions</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <img src="./image/f-t-1.png"></img>
+
+            <div class="time flex">
+              <label>PG-13</label>
+              <i class="fas fa-circle"></i>
+              <span>2hrs 2mins</span>
+              <i class="fas fa-circle"></i>
+              <p>2022</p>
+              <i class="fas fa-circle"></i>
+              <button>Adventure</button>
+            </div>
+
+            <p>As the skies turn red and the planet trembles, Japan stands on the brink of disaster. However, a determined teenager named Suzume sets out on a mission to save her country. Able to see supernatural forces that others cannot, it's up to her to close the mysterious doors that are spreading chaos across the land. A perilous journey awaits as the fate of Japan rests on her shoulders.
+            </p>
+            <div class="button flex">
+              <button class="btn">PLAY NOW</button>
+              <i id="palybtn" class="fas fa-play"></i>
+              <p>WATCH TRAILER</p>
+            </div>
+
+            <div class="cast">
+                <p>Director: Makoto Shinkai</p>
+                <p>Cast: Nanoka Hara, Hokuto Matsumura, <i>more</i></p>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Recommendations</h2>
+        <button>See More</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p16.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Kimi no Na wa.</h3>
+              <div class="time flex">
+                <span>2hrs 20mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Animation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p17.jpeg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Tenki no Ko</h3>
+              <div class="time flex">
+                <span>1hrs 32mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p13.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Spirited Away</h3>
+              <div class="time flex">
+                <span>2hrs 29mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Animation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/18.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Howl's Moving Castle</h3>
+              <div class="time flex">
+                <span>1hrs 56mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Animation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p19.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+              <i id="palybtn" class="fas fa-play"></i>
+            </div>
+            <div class="text">
+              <h3>Toki wo Kakeru Shoujo</h3>
+              <div class="time flex">
+                <span>2hrs 24mins</span>
+                <i class="fas fa-circle"></i>
+                <a>Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <footer>
+    <div class="container mtop">
+      <div class="box">
+        <div class="logo">
+          <h2>JetFlix</h2>
+        </div>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="icon">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-youtube-square"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Explore</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Anime</li>
+            <li>Sports</li>
+          </ul>
+          <ul class="ul">
+            <li>Action</li>
+            <li>Horror</li>
+            <li>Adventure</li>
+            <li>Romance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box ">
+        <h2>Company</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Subscribe</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Download App</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="img flex1">
+          <img src="image/app1.png" alt="">
+          <img src="image/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2023 Copyright Holder All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
